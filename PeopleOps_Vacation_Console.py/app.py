@@ -37,8 +37,7 @@ def menu_principal():
             menu_empleados()
         elif opcion == "2":
             menu_vacaciones()
-        elif opcion == "3":
-            menu_reportes()
+            
         elif opcion == "0":
             confirmar = input("Seguro que desea salir? (S/N): ")
             if confirmar.upper() == "S":

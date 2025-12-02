@@ -12,10 +12,10 @@ def crear_archivo_vacaciones():
     
     if not os.path.exists("data/vacaciones.csv"):
         with open("data/vacaciones.csv", "w", newline="") as archivo:
-        escritor = csv.writer(archivo)
-        escritor.writerow(["empleado_id", "nombre_empleado", "fecha_inicio_vacaciones", 
-                          "fecha_fin_vacaciones", "dias_calculados", "estado", "mes", "anio"])
-       
+            escritor = csv.writer(archivo)
+            escritor.writerow(["empleado_id", "nombre_empleado", "fecha_inicio_vacaciones", 
+                                "fecha_fin_vacaciones", "dias_calculados", "estado", "mes", "anio"])
+            
 
 
 def contar_dias_sin_domingos(fecha_inicio, fecha_fin):
