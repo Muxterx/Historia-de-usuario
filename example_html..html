@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arthur's Kingdom</title>
+</head>
+<body>
+
+    <!-- HEADER TRANSPARENTE -->
+    <header>
+        <h1 class="title-glow">THE ARTHUR'S KINGDOM
+            <div style="background: #282828; padding: 5px; border-radius: 8px; margin-top: 15px; border: 1px solid #181818; display: flex; flex-direction: column; gap: 5px; width: 200px;">
+        
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="king_a.png" style="width: 40px; height: 40px; border-radius: 4px; object-fit: cover;" alt="Cover">
+                    <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                        <span style="color: white; font-size: 14px; font-weight: bold; font-family: sans-serif;">Excalibur Theme</span>
+                        <span style="color: #b3b3b3; font-size: 11px; font-family: sans-serif;">Arthurian OST</span>
+                    </div>
+                </div>
+
+                <audio controls src="The Shire.mp3" style="width: 100%; height: 30px;"></audio>
+            </div>
+        </h1>
+        <p id="temu">The story of the boy who was born to be king</p>
+    </header>
+
+    <!-- CONTENEDOR DE TARJETAS -->
+    <section class="cards-container">
+
+        <!-- TARJETA 1 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="Arthur.png" alt="King Arthur">
+            </div>
+            <h1><a href="king_arthur.html">The King Arthur</a></h1>
+            <p>The human heart is the most impossible enemy to defeat.</p>
+        </div>
+
+        <!-- TARJETA 2 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="espada_piedra.png" alt="The Sword in the Stone">
+            </div>
+            <h1><a href="sword.html">The Sword</a></h1>
+            <p>Magic did not choose the strongest, but the fairest.</p>
+        </div>
+
+        <!-- TARJETA 3 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="mesa.png" alt="Round Table">
+            </div>
+            <h1><a href="mesa_redonda.html">Round Table</a></h1>
+            <p>The human heart is the most impossible enemy to defeat.</p>
+        </div>
+
+        <!-- TARJETA 4 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="king_a.png" alt="Arthur Kingdom">
+            </div>
+            <h1>The Kingdom of Arthur</h1>
+            <p>The human heart is the most impossible enemy to defeat.</p>
+        </div>
+
+        <!-- TARJETA 5 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="merlin_arthur.png" alt="Arthur Kingdom">
+            </div>
+            <h1><a href="Merlin.html">Merlin</a></h1>
+            <p>The human heart is the most impossible enemy to defeat.</p>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="foter">
+        <p>© Jose Rivera</p>
+        <p>© Danna Oyola</p>
+        <p>© Valentina Duque</p>
+        <p>© Sergio Ospina</p>
+        <p>2025</p>
+        <p>https://github.com/JoseRivera-07/Arthur-s-Kingdom</p>
+        <p>https://joserivera-07.github.io/Arthur-s-Kingdom/</p>
+
+
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
