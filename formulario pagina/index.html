@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-form-container">
+        <h1>Contáctanos</h1>
+        <form action="#" method="POST" class="contact-form">
+            
+            <div class="input-group">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                <input type="text" id="empresa" name="empresa" placeholder="Empresa" required>
+            </div>
+
+            <input class="input-group"  type="email" id="email" name="email" placeholder="E-mail" required>
+            
+            <textarea   id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+
+            <div class="privacy-checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto las políticas de privacidad</label>
+            </div>
+
+            <button type="submit" class="submit-button">ENVIAR</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Barcelona: C/Diputació 279 6ª 3ª 08007 | T 34 93 611 6034</p>
+            <p>Madrid: Paseo de la Castellana, 79, Planta 6, 28046 | T +34 917916634</p>
+        </div>
+    </div> 
+
+    
+     
+        
+
+    
+</body>
+</html>
+
