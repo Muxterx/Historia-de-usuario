@@ -1,0 +1,144 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px; 
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.boton {
+  position: relative;
+  left: 350px;
+  padding: 14px 16px;
+  background: #FFFFFF;
+  color: #4CAF4F;
+  border: none;
+}
+
+.btn {
+  padding: 14px 16px;
+  background: green;
+  color: white;
+  border: none;
+}
+
+
+.hero {
+  background-color: #F5F7FA;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 40px;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text h1{
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.img-box {
+  background: #ddd;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.clients {
+  text-align: center;
+  padding: 40px;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.logo-box {
+  width: 60px;
+  height: 40px;
+  background: #ccc;
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+}
+
+.statistics {
+  background-color: #F5F7FA;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .hero,
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+
+}
